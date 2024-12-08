@@ -1,0 +1,104 @@
+{
+    "name": "Python",
+    "keywords": [
+        "False", "None", "True", "and", "as", "assert", "async", "await",
+        "break", "class", "continue", "def", "del", "elif", "else", "except",
+        "finally", "for", "from", "global", "if", "import", "in", "is",
+        "lambda", "nonlocal", "not", "or", "pass", "raise", "return",
+        "try", "while", "with", "yield"
+    ],
+    "types": [
+        "bool", "bytearray", "bytes", "complex", "dict", "float", "frozenset",
+        "int", "list", "set", "str", "tuple", "type"
+    ],
+    "literals": [
+        "True", "False", "None"
+    ],
+    "builtins": [
+        "abs", "all", "any", "ascii", "bin", "bool", "breakpoint", "bytearray",
+        "bytes", "callable", "chr", "classmethod", "compile", "complex",
+        "delattr", "dict", "dir", "divmod", "enumerate", "eval", "exec",
+        "filter", "float", "format", "frozenset", "getattr", "globals",
+        "hasattr", "hash", "help", "hex", "id", "input", "int", "isinstance",
+        "issubclass", "iter", "len", "list", "locals", "map", "max",
+        "memoryview", "min", "next", "object", "oct", "open", "ord", "pow",
+        "print", "property", "range", "repr", "reversed", "round", "set",
+        "setattr", "slice", "sorted", "staticmethod", "str", "sum", "super",
+        "tuple", "type", "vars", "zip", "__import__"
+    ],
+    "singleLineComment": "#",
+    "multiLineCommentStart": "'''",
+    "multiLineCommentEnd": "'''",
+    "stringDelimiter": "\"",
+    "charDelimiter": "'",
+    "rules": [
+        {
+            "pattern": "\\bclass\\s+[A-Za-z_][A-Za-z0-9_]*\\b",
+            "type": "type"
+        },
+        {
+            "pattern": "\\bdef\\s+[A-Za-z_][A-Za-z0-9_]*\\b",
+            "type": "function"
+        },
+        {
+            "pattern": "@[A-Za-z_][A-Za-z0-9_]*",
+            "type": "builtin"
+        },
+        {
+            "pattern": "\\b\\d+\\.\\d*([eE][+-]?\\d+)?j?\\b",
+            "type": "number"
+        },
+        {
+            "pattern": "\\b\\.\\d+([eE][+-]?\\d+)?j?\\b",
+            "type": "number"
+        },
+        {
+            "pattern": "\\b\\d+[jJ]\\b",
+            "type": "number"
+        },
+        {
+            "pattern": "\\b0[xX][0-9a-fA-F]+\\b",
+            "type": "number"
+        },
+        {
+            "pattern": "\\b0[oO][0-7]+\\b",
+            "type": "number"
+        },
+        {
+            "pattern": "\\b0[bB][01]+\\b",
+            "type": "number"
+        },
+        {
+            "pattern": "[+\\-*/%@&|^=<>]=?",
+            "type": "operator"
+        },
+        {
+            "pattern": "\\b(and|or|not|in|is)\\b",
+            "type": "operator"
+        },
+        {
+            "pattern": "f?\"\"\"[^\"]*\"\"\"",
+            "type": "string"
+        },
+        {
+            "pattern": "f?'''[^']*'''",
+            "type": "string"
+        },
+        {
+            "pattern": "f?\"(?:\\\\.|[^\"])*\"",
+            "type": "string"
+        },
+        {
+            "pattern": "f?'(?:\\\\.|[^'])*'",
+            "type": "string"
+        },
+        {
+            "pattern": "\\bself\\b",
+            "type": "builtin"
+        },
+        {
+            "pattern": "\\bcls\\b",
+            "type": "builtin"
+        }
+    ]
+} 

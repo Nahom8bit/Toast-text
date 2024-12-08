@@ -1,0 +1,86 @@
+{
+    "name": "C++",
+    "keywords": [
+        "alignas", "alignof", "and", "and_eq", "asm", "auto", "bitand", "bitor",
+        "bool", "break", "case", "catch", "char", "char8_t", "char16_t", "char32_t",
+        "class", "compl", "concept", "const", "consteval", "constexpr", "constinit",
+        "const_cast", "continue", "co_await", "co_return", "co_yield", "decltype",
+        "default", "delete", "do", "double", "dynamic_cast", "else", "enum",
+        "explicit", "export", "extern", "false", "float", "for", "friend", "goto",
+        "if", "inline", "int", "long", "mutable", "namespace", "new", "noexcept",
+        "not", "not_eq", "nullptr", "operator", "or", "or_eq", "private",
+        "protected", "public", "register", "reinterpret_cast", "requires", "return",
+        "short", "signed", "sizeof", "static", "static_assert", "static_cast",
+        "struct", "switch", "template", "this", "thread_local", "throw", "true",
+        "try", "typedef", "typeid", "typename", "union", "unsigned", "using",
+        "virtual", "void", "volatile", "wchar_t", "while", "xor", "xor_eq"
+    ],
+    "types": [
+        "bool", "char", "char8_t", "char16_t", "char32_t", "double", "float",
+        "int", "long", "short", "signed", "unsigned", "void", "wchar_t",
+        "size_t", "ptrdiff_t", "nullptr_t", "max_align_t"
+    ],
+    "literals": [
+        "true", "false", "nullptr"
+    ],
+    "builtins": [
+        "std", "cout", "cin", "cerr", "endl", "string", "vector", "map",
+        "set", "list", "queue", "stack", "pair", "make_pair", "shared_ptr",
+        "unique_ptr", "weak_ptr", "make_shared", "make_unique"
+    ],
+    "singleLineComment": "//",
+    "multiLineCommentStart": "/*",
+    "multiLineCommentEnd": "*/",
+    "stringDelimiter": "\"",
+    "charDelimiter": "'",
+    "rules": [
+        {
+            "pattern": "\\b[A-Za-z_][A-Za-z0-9_]*::",
+            "type": "type"
+        },
+        {
+            "pattern": "\\b[A-Z][A-Za-z0-9_]*\\b",
+            "type": "type"
+        },
+        {
+            "pattern": "\\b0[xX][0-9a-fA-F]+\\b",
+            "type": "number"
+        },
+        {
+            "pattern": "\\b\\d+\\.\\d*([eE][+-]?\\d+)?[fFlL]?\\b",
+            "type": "number"
+        },
+        {
+            "pattern": "\\b\\.\\d+([eE][+-]?\\d+)?[fFlL]?\\b",
+            "type": "number"
+        },
+        {
+            "pattern": "\\b\\d+[uUlL]*\\b",
+            "type": "number"
+        },
+        {
+            "pattern": "[+\\-*/%=<>!&|^~]=?",
+            "type": "operator"
+        },
+        {
+            "pattern": "\\b(and|or|not|xor|bitand|bitor|compl)\\b",
+            "type": "operator"
+        },
+        {
+            "pattern": "\\b[A-Za-z_][A-Za-z0-9_]*(?=\\s*\\()",
+            "type": "function"
+        },
+        {
+            "pattern": "R\"\\([^()]*\\)\"",
+            "type": "string"
+        },
+        {
+            "pattern": "L?\"(?:\\\\.|[^\"])*\"",
+            "type": "string"
+        },
+        {
+            "pattern": "L?'(?:\\\\.|[^'])*'",
+            "type": "string"
+        }
+    ]
+} 

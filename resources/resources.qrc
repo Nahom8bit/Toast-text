@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RCC>
+    <qresource prefix="/icons">
+        <file>icons/new.png</file>
+        <file>icons/open.png</file>
+        <file>icons/save.png</file>
+        <file>icons/save-as.png</file>
+        <file>icons/undo.png</file>
+        <file>icons/redo.png</file>
+        <file>icons/cut.png</file>
+        <file>icons/copy.png</file>
+        <file>icons/paste.png</file>
+        <file>icons/find.png</file>
+        <file>icons/replace.png</file>
+        <file>icons/settings.png</file>
+        <file>icons/zoom-in.png</file>
+        <file>icons/zoom-out.png</file>
+        <file>icons/zoom-reset.png</file>
+        <file>icons/split-horizontal.png</file>
+        <file>icons/split-vertical.png</file>
+    </qresource>
+    <qresource prefix="/styles">
+        <file>styles/dark.qss</file>
+        <file>styles/light.qss</file>
+    </qresource>
+    <qresource prefix="/syntax">
+        <file>syntax/cpp.json</file>
+        <file>syntax/python.json</file>
+    </qresource>
+</RCC> 
