@@ -1,164 +1,88 @@
-# Qt Text Editor
+# Toast Text Editor
 
-A modern text editor built with Qt6 and C++17.
+A modern, lightweight text editor built with Qt6 and C++. Toast Text combines simplicity with powerful features to provide a smooth editing experience.
 
-## Current Project Status
+## Features
 
-### Environment Setup
-- [x] Project structure
-- [x] CMake configuration
-- [ ] Qt6 dependencies installation
-- [ ] Resource system setup
+- 🚀 Fast and lightweight
+- 📝 Clean, distraction-free interface
+- 🎨 Syntax highlighting for multiple languages
+- 🔍 Advanced find and replace functionality
+- 📂 Session management
+- 🎯 Split view editing
+- 🌙 Light and dark themes
+- ⚡ Auto-save and crash recovery
 
-### Core Components
-1. **Main Window**
-   - [x] Basic window structure
-   - [x] Menu bar layout
-   - [x] Tool bar layout
-   - [ ] Action connections
-   - [ ] Event handlers
+## Installation
 
-2. **Editor**
-   - [x] Basic text editing
-   - [x] Line numbers
-   - [ ] Syntax highlighting
-   - [ ] Find/Replace
+### System Requirements
+- Linux (Ubuntu/Debian-based systems)
+- Qt6
+- C++17 compatible compiler
 
-3. **File Management**
-   - [x] Basic open/save
-   - [ ] Recent files
-   - [ ] File monitoring
-   - [ ] Auto-save
-
-4. **UI Features**
-   - [x] Status bar
-   - [ ] Theme support
-   - [ ] Settings dialog
-   - [ ] Icon resources
-
-## Setup Instructions
-
-### Prerequisites
+### Dependencies
+Install the required packages:
 ```bash
-# Install required packages
+sudo apt-get update
 sudo apt-get install qt6-base-dev qt6-declarative-dev cmake build-essential
 ```
 
-### Building
+### Building from Source
 ```bash
-# Create build directory
-mkdir -p build
-cd build
+# Clone the repository
+git clone https://github.com/Nahom8bit/Toast-text.git
+cd Toast-text
 
-# Configure and build
+# Create build directory and build
+mkdir build && cd build
 cmake ..
 make
 ```
 
-## Known Issues
+## Usage
 
-### Build Issues
-1. Qt Dependencies
-   - Missing Qt includes
-   - Need to install Qt6 development packages
+### Basic Operations
+- **New File**: Ctrl + N
+- **Open File**: Ctrl + O
+- **Save**: Ctrl + S
+- **Save As**: Ctrl + Shift + S
+- **Find**: Ctrl + F
+- **Replace**: Ctrl + H
+- **Settings**: Ctrl + ,
 
-2. Resource System
-   - Icons not generated
-   - Resource paths not configured
-   - Resource compilation disabled
+### Split View
+- Use the split view buttons in the toolbar to divide your workspace
+- Drag and drop files between splits
+- Synchronize scrolling between splits (optional)
 
-3. Implementation Issues
-   - Return type mismatches in MainWindow methods
-   - Missing event handlers
-   - Signal/slot connection errors
-
-### Feature Gaps
-1. Core Functionality
-   - Syntax highlighting not implemented
-   - Find/Replace dialog incomplete
-   - Settings persistence missing
-
-2. UI Elements
-   - Icons missing
-   - Themes not implemented
-   - Settings dialog incomplete
-
-## Project Structure
-```
-TextEditor/
-├── src/                 # Source files
-│   ├── main.cpp
-│   ├── mainwindow.cpp
-│   ├── editor.cpp
-│   ├── filemanager.cpp
-│   ├── dialogs/
-│   │   ├── finddialog.cpp
-│   │   └── settingsdialog.cpp
-│   └── syntax/
-│       └── syntaxhighlighter.cpp
-├── include/             # Header files
-│   ├── mainwindow.h
-│   ├── editor.h
-│   ├── filemanager.h
-│   ├── dialogs/
-│   │   ├── finddialog.h
-│   │   └── settingsdialog.h
-│   └── syntax/
-│       └── syntaxhighlighter.h
-├── forms/              # UI files
-│   ├── mainwindow.ui
-│   └── dialogs/
-│       ├── finddialog.ui
-│       └── settingsdialog.ui
-├── resources/          # Resources
-│   ├── resources.qrc
-│   ├── icons/
-│   └── styles/
-├── CMakeLists.txt
-└── .gitignore
-```
-
-## Immediate Tasks
-
-### High Priority
-1. Fix build system:
-   - Install Qt dependencies
-   - Fix CMake configuration
-   - Set up resource compilation
-
-2. Fix implementation issues:
-   - Correct MainWindow method signatures
-   - Add missing event handlers
-   - Fix signal/slot connections
-
-### Medium Priority
-1. Complete core features:
-   - Implement syntax highlighting
-   - Complete Find/Replace functionality
-   - Add settings persistence
-
-### Low Priority
-1. Enhance UI:
-   - Generate and add icons
-   - Implement themes
-   - Add recent files menu
+### Customization
+- Choose between light and dark themes
+- Customize syntax highlighting
+- Configure auto-save intervals
+- Adjust editor preferences through the Settings dialog
 
 ## Contributing
 
-To contribute to this project:
+We welcome contributions! If you'd like to help improve Toast Text:
 
-1. Install the prerequisites
-2. Fork the repository
-3. Create a feature branch
-4. Make your changes
-5. Submit a pull request
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
+## Support
+
+If you encounter any issues or have suggestions:
+- Open an issue on GitHub
+- Contact the maintainer at [Your Contact Info]
+
 ## Acknowledgments
 
-- Qt Documentation
-- C++ Standard Library
-- CMake Documentation 
+Special thanks to:
+- Qt Framework team
+- All contributors and users of Toast Text
